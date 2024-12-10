@@ -16,7 +16,7 @@ public class CategoryService {
     private CategoryRepository categoryRepository;
 
     public Page<Category> getAllCategories(int page) {
-        return categoryRepository.findAll(PageRequest.of(page, 10)); // 10 items per page
+        return categoryRepository.findAll(PageRequest.of(page, 10)); 
     }
 
     public Category createCategory(Category category) {

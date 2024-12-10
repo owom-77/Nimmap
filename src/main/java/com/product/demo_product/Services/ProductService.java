@@ -16,7 +16,7 @@ public class ProductService {
     private ProductRepository productRepository;
 
     public Page<Product> getAllProducts(int page) {
-        return productRepository.findAll(PageRequest.of(page, 10)); // 10 items per page
+        return productRepository.findAll(PageRequest.of(page, 10)); 
     }
 
     public Product createProduct(Product product) {
